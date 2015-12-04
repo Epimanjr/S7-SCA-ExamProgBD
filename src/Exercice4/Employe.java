@@ -6,7 +6,7 @@ package Exercice4;
  * @author Maxime BLAISE
  * @author Marine ANGELONI
  */
-public class Employe {
+public abstract class Employe {
     
     /**
      * Nom de l'employé.
@@ -49,6 +49,9 @@ public class Employe {
         this.age = age;
         this.anciennete = anciennete;
     }
+    
+    public abstract double calculer_base_salaire();
+    public abstract double calculer_salaire();
 
     
     /* GETTERS AND SETTERS */
