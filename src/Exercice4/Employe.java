@@ -49,6 +49,16 @@ public abstract class Employe {
         this.age = age;
         this.anciennete = anciennete;
     }
+
+    @Override
+    public String toString() {
+        return "Employe{" + "nom=" + nom + ", prenom=" + prenom + ", adresse=" + adresse + ", age=" + age + ", anciennete=" + anciennete + '}';
+    }
+    
+    public void afficher() {
+        System.out.println(this.toString());
+    }
+    
     
     public abstract double calculer_base_salaire();
     public abstract double calculer_salaire();
